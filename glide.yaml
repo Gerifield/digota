@@ -1,4 +1,4 @@
-package: github.com/gerifield/digota
+package: github.com/digota/digota
 import:
 - package: github.com/digota/digota
   subpackages:
