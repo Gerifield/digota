@@ -7,12 +7,13 @@ services: mongodb
 before_script:
   - "sudo apt-get install zookeeperd"
 before_install:
-  - go get github.com/Masterminds/glide
-  - cd $GOPATH/src/github.com/Masterminds/glide && git checkout 84607742b10f492430762d038e954236bbaf23f7 && go install && cd -
-  - glide install
   - go get github.com/go-playground/overalls
   - go get github.com/mattn/goveralls
   - go get golang.org/x/tools/cmd/cover
+install:
+  - go get github.com/Masterminds/glide
+  - cd $GOPATH/src/github.com/Masterminds/glide && git checkout tags/0.12.3 && go install && cd -
+  - glide install
 script:
   - go build $(glide nv)
   - go fmt $(glide nv)
