@@ -1,43 +1,10 @@
-hash: 99bfc1bfbb3f88cd7780d4ec0f9282be7a1bd404caf4d1f8229025a7e1923759
-updated: 2017-08-17T11:51:03.294005528+02:00
+hash: 0776a97db60dc0975bf17ad9c90f22cc5c9ccfe29d37981df4d5bc00417787f4
+updated: 2017-08-17T13:05:35.564213011+02:00
 imports:
 - name: github.com/davecgh/go-spew
   version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
   subpackages:
   - spew
-- name: github.com/digota/digota
-  version: 6fdecd16e28e92b957a9687c0265ce7024b568fe
-  subpackages:
-  - acl
-  - client
-  - config
-  - locker
-  - locker/handlers/zookeeper
-  - middleware/authentication
-  - middleware/logger
-  - middleware/recovery
-  - order
-  - order/orderpb
-  - order/service
-  - payment
-  - payment/errors
-  - payment/paymentpb
-  - payment/service
-  - payment/service/providers
-  - payment/service/providers/internalTestOnly
-  - payment/service/providers/stripe
-  - product
-  - product/productpb
-  - product/service
-  - server
-  - sku
-  - sku/service
-  - sku/skupb
-  - storage
-  - storage/handlers/mongo
-  - storage/object
-  - util
-  - validation
 - name: github.com/go-playground/locales
   version: 1e5f1161c6416a5ff48840eb8724a394e48cc534
   subpackages:
